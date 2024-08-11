@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/backButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/cassavaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Cassava"
+                android:backgroundTint="#006400"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/celosiaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Celosia"
+                android:backgroundTint="#006400"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/ginsengliarButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Ginseng Jawa"
+                android:backgroundTint="#006400"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/sintrongButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Sintrong"
+                android:backgroundTint="#006400"
+                android:textColor="@android:color/white"/>
+
+            <!-- Add more plant buttons here as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="goBack"
+        android:text="Kembali"
+        android:backgroundTint="#006400"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

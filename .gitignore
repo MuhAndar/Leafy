@@ -1,0 +1,20 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file
+local.properties
+
+# Log files
+*.log
+
+# Android Studio project files
+.idea/
+.vscode/
+
+# Other generated files
+.DS_Store
+.iml
+.class
+.apk
+.cxx/
