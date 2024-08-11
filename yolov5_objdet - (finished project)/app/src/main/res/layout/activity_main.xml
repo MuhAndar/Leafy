@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/encyclopediaIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Encyclopedia"
+        android:onClick="openEncyclopedia"
+        android:src="@drawable/ic_book" />
+
+    <TextView
+        android:id="@+id/encyclopediaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encyclopediaIcon"
+        android:layout_alignEnd="@id/encyclopediaIcon"
+        android:layout_marginTop="1dp"
+        android:text="Encyclopedia"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="196dp"
+        android:layout_height="425dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="220dp"
+        android:src="@drawable/leaf"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:background="#FFFFFF"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:onClick="openCamera"
+        android:text="Kamera"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:onClick="selectImage"
+        android:text="Galeri"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="predict"
+        android:text="Prediksi"
+        android:visibility="gone"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="goBack"
+        android:text="Kembali"
+        android:visibility="gone"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/noDetectionMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Tanaman Tidak Terdeteksi"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:visibility="gone" />
+</RelativeLayout>
